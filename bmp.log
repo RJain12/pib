@@ -1,0 +1,20 @@
+[INFO  2024-04-08T21:15:32,934 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2024-04-08T21:15:32,963 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2024-04-08T21:15:32,988 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2024-04-08T21:15:33,104 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8080 
+[INFO  2024-04-08T21:15:33,630 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp2027317551-17) Starting proxy at address: 0.0.0.0/0.0.0.0:8081 
+[INFO  2024-04-08T21:15:33,640 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp2027317551-17) Proxy listening with TCP transport 
+[INFO  2024-04-08T21:15:33,672 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp2027317551-17) Proxy started at address: /0:0:0:0:0:0:0:0:8081 
+[WARN  2024-04-08T21:21:55,919 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0x5a23cf41, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60161]: No host and port found in /bad-request 
+[INFO  2024-04-08T21:22:01,795 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ProxyToServerWorker-0) (AWAITING_CHUNK) [id: 0x036bd60e, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60346]: Connection to server became saturated, stopping reading 
+[INFO  2024-04-08T21:22:01,807 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ProxyToServerWorker-0) (AWAITING_INITIAL) [id: 0x036bd60e, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60346]: All server connections writeable, resuming reading 
+[INFO  2024-04-08T21:22:01,842 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-6) (NEGOTIATING_CONNECT) [id: 0xd666969a, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60374]: An IOException occurred on ClientToProxyConnection: Connection reset by peer 
+[INFO  2024-04-08T21:22:01,844 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-6) (DISCONNECTED) [id: 0x824d4a5b, L:0.0.0.0/0.0.0.0:60375]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[WARN  2024-04-08T21:22:23,704 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x92e521b6, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60488]: No host and port found in /bad-request 
+[INFO  2024-04-08T21:23:02,476 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (NEGOTIATING_CONNECT) [id: 0x798d0ec9, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60867]: An IOException occurred on ClientToProxyConnection: Connection reset by peer 
+[INFO  2024-04-08T21:23:02,478 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-5) (HANDSHAKING) [id: 0x024a3d31, L:0.0.0.0/0.0.0.0:60872 ! R:match.adsrvr.org/15.197.193.217:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[WARN  2024-04-08T21:23:15,492 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0xb82578f3, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:60897]: No host and port found in /bad-request 
